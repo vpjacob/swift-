@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mZl-PG-joF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_collectionView_tableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8v-Nt-JDy">
+                                <rect key="frame" x="0.0" y="64" width="179.5" height="301.5"/>
+                                <color key="backgroundColor" red="0.49582779679829392" green="1" blue="0.56768479216117274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="代码collection"/>
+                                <connections>
+                                    <action selector="code_collection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOG-a9-3g7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fs-Fi-XVE">
+                                <rect key="frame" x="179.5" y="64" width="179.5" height="301.5"/>
+                                <color key="backgroundColor" red="0.86890184711567131" green="1" blue="0.58327497056580302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="代码tableview"/>
+                                <connections>
+                                    <action selector="code_tableview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gI7-fK-5MK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-4w-vrB">
+                                <rect key="frame" x="179.5" y="365.5" width="179.5" height="301.5"/>
+                                <color key="backgroundColor" red="1" green="0.16071950692429038" blue="0.97911539956400873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="xib版tableview"/>
+                                <connections>
+                                    <action selector="xib_tableview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOR-22-8nO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rf-hi-yy3">
+                                <rect key="frame" x="0.0" y="365.5" width="179.5" height="301.5"/>
+                                <color key="backgroundColor" red="0.37313095318515122" green="0.57288439399596569" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="xib版collection"/>
+                                <connections>
+                                    <action selector="xib_collection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSW-fs-I6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zjk-4w-vrB" firstAttribute="top" secondItem="0Fs-Fi-XVE" secondAttribute="bottom" id="5IC-2G-MOB"/>
+                            <constraint firstItem="0Fs-Fi-XVE" firstAttribute="leading" secondItem="N8v-Nt-JDy" secondAttribute="trailing" id="8Bu-Ep-PQ3"/>
+                            <constraint firstItem="8Rf-hi-yy3" firstAttribute="top" secondItem="N8v-Nt-JDy" secondAttribute="bottom" id="Dai-bW-tXZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zjk-4w-vrB" secondAttribute="trailing" id="EqO-Q5-y6E"/>
+                            <constraint firstItem="0Fs-Fi-XVE" firstAttribute="width" secondItem="N8v-Nt-JDy" secondAttribute="width" id="GT8-qG-jCn"/>
+                            <constraint firstItem="Zjk-4w-vrB" firstAttribute="leading" secondItem="8Rf-hi-yy3" secondAttribute="trailing" id="W7n-11-Lww"/>
+                            <constraint firstItem="N8v-Nt-JDy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xhl-fT-Req"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Rf-hi-yy3" secondAttribute="bottom" id="Yr9-Ld-xGi"/>
+                            <constraint firstItem="0Fs-Fi-XVE" firstAttribute="height" secondItem="N8v-Nt-JDy" secondAttribute="height" id="aVE-mG-ykY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zjk-4w-vrB" secondAttribute="bottom" id="ecb-1W-dMG"/>
+                            <constraint firstItem="Zjk-4w-vrB" firstAttribute="width" secondItem="N8v-Nt-JDy" secondAttribute="width" id="nex-db-T6S"/>
+                            <constraint firstItem="Zjk-4w-vrB" firstAttribute="height" secondItem="N8v-Nt-JDy" secondAttribute="height" id="sjb-xU-Wgi"/>
+                            <constraint firstItem="8Rf-hi-yy3" firstAttribute="height" secondItem="N8v-Nt-JDy" secondAttribute="height" id="u0k-hL-Umj"/>
+                            <constraint firstItem="8Rf-hi-yy3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uyP-Cd-eih"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Fs-Fi-XVE" secondAttribute="trailing" id="vgb-Hg-8C5"/>
+                            <constraint firstItem="0Fs-Fi-XVE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wVT-ll-mNd"/>
+                            <constraint firstItem="N8v-Nt-JDy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wfN-Z6-UAd"/>
+                            <constraint firstItem="8Rf-hi-yy3" firstAttribute="width" secondItem="N8v-Nt-JDy" secondAttribute="width" id="yGS-3R-Pb9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8AK-g3-ens"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cqe-bb-Gwl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZl-PG-joF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HC2-PO-MMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0W6-Cz-gUe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBT-vW-N8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
