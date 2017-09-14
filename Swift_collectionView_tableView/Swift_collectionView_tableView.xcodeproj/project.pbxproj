@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6D0A7B01F6A59BC0092F295 /* JJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0A7AE1F6A59BC0092F295 /* JJCollectionViewCell.swift */; };
+		D6D0A7B11F6A59BC0092F295 /* JJCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D0A7AF1F6A59BC0092F295 /* JJCollectionViewCell.xib */; };
+		D6D0A7B41F6A59DC0092F295 /* JJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0A7B21F6A59DC0092F295 /* JJTableViewCell.swift */; };
+		D6D0A7B51F6A59DC0092F295 /* JJTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D0A7B31F6A59DC0092F295 /* JJTableViewCell.xib */; };
 		D6D24E361F67862D0000CE93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E351F67862D0000CE93 /* AppDelegate.swift */; };
 		D6D24E381F67862E0000CE93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E371F67862E0000CE93 /* ViewController.swift */; };
 		D6D24E3B1F67862E0000CE93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D24E391F67862E0000CE93 /* Main.storyboard */; };
@@ -15,12 +19,14 @@
 		D6D24E481F678B080000CE93 /* Code_collectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E471F678B080000CE93 /* Code_collectionViewController.swift */; };
 		D6D24E4A1F678B220000CE93 /* Code_tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E491F678B220000CE93 /* Code_tableViewController.swift */; };
 		D6D24E511F678B5F0000CE93 /* Xib_collectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E4F1F678B5F0000CE93 /* Xib_collectionViewController.swift */; };
-		D6D24E521F678B5F0000CE93 /* Xib_collectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D24E501F678B5F0000CE93 /* Xib_collectionViewController.xib */; };
 		D6D24E551F678B6E0000CE93 /* Xib_tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D24E531F678B6E0000CE93 /* Xib_tableViewController.swift */; };
-		D6D24E561F678B6E0000CE93 /* Xib_tableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D24E541F678B6E0000CE93 /* Xib_tableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6D0A7AE1F6A59BC0092F295 /* JJCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6D0A7AF1F6A59BC0092F295 /* JJCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJCollectionViewCell.xib; sourceTree = "<group>"; };
+		D6D0A7B21F6A59DC0092F295 /* JJTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTableViewCell.swift; sourceTree = "<group>"; };
+		D6D0A7B31F6A59DC0092F295 /* JJTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJTableViewCell.xib; sourceTree = "<group>"; };
 		D6D24E321F67862D0000CE93 /* Swift_collectionView_tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_collectionView_tableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D24E351F67862D0000CE93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6D24E371F67862E0000CE93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +37,7 @@
 		D6D24E471F678B080000CE93 /* Code_collectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code_collectionViewController.swift; sourceTree = "<group>"; };
 		D6D24E491F678B220000CE93 /* Code_tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code_tableViewController.swift; sourceTree = "<group>"; };
 		D6D24E4F1F678B5F0000CE93 /* Xib_collectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xib_collectionViewController.swift; sourceTree = "<group>"; };
-		D6D24E501F678B5F0000CE93 /* Xib_collectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Xib_collectionViewController.xib; sourceTree = "<group>"; };
 		D6D24E531F678B6E0000CE93 /* Xib_tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xib_tableViewController.swift; sourceTree = "<group>"; };
-		D6D24E541F678B6E0000CE93 /* Xib_tableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Xib_tableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +75,11 @@
 				D6D24E471F678B080000CE93 /* Code_collectionViewController.swift */,
 				D6D24E491F678B220000CE93 /* Code_tableViewController.swift */,
 				D6D24E4F1F678B5F0000CE93 /* Xib_collectionViewController.swift */,
-				D6D24E501F678B5F0000CE93 /* Xib_collectionViewController.xib */,
+				D6D0A7AE1F6A59BC0092F295 /* JJCollectionViewCell.swift */,
+				D6D0A7AF1F6A59BC0092F295 /* JJCollectionViewCell.xib */,
 				D6D24E531F678B6E0000CE93 /* Xib_tableViewController.swift */,
-				D6D24E541F678B6E0000CE93 /* Xib_tableViewController.xib */,
+				D6D0A7B21F6A59DC0092F295 /* JJTableViewCell.swift */,
+				D6D0A7B31F6A59DC0092F295 /* JJTableViewCell.xib */,
 				D6D24E391F67862E0000CE93 /* Main.storyboard */,
 				D6D24E3C1F67862E0000CE93 /* Assets.xcassets */,
 				D6D24E3E1F67862F0000CE93 /* LaunchScreen.storyboard */,
@@ -142,10 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D24E521F678B5F0000CE93 /* Xib_collectionViewController.xib in Resources */,
+				D6D0A7B11F6A59BC0092F295 /* JJCollectionViewCell.xib in Resources */,
 				D6D24E401F67862F0000CE93 /* LaunchScreen.storyboard in Resources */,
 				D6D24E3D1F67862E0000CE93 /* Assets.xcassets in Resources */,
-				D6D24E561F678B6E0000CE93 /* Xib_tableViewController.xib in Resources */,
+				D6D0A7B51F6A59DC0092F295 /* JJTableViewCell.xib in Resources */,
 				D6D24E3B1F67862E0000CE93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +168,9 @@
 				D6D24E361F67862D0000CE93 /* AppDelegate.swift in Sources */,
 				D6D24E551F678B6E0000CE93 /* Xib_tableViewController.swift in Sources */,
 				D6D24E4A1F678B220000CE93 /* Code_tableViewController.swift in Sources */,
+				D6D0A7B01F6A59BC0092F295 /* JJCollectionViewCell.swift in Sources */,
 				D6D24E481F678B080000CE93 /* Code_collectionViewController.swift in Sources */,
+				D6D0A7B41F6A59DC0092F295 /* JJTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +336,7 @@
 				D6D24E461F67862F0000CE93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

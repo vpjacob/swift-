@@ -8,28 +8,33 @@
 
 import UIKit
 
-class Xib_tableViewController: UIViewController {
+class Xib_tableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    var tableView:UITableView?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView = UITableView(frame: self.view.frame, style: UITableViewStyle.plain)
+        tableView?.dataSource = self
+        self.view.addSubview(tableView!)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        code method
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "JJTableViewCell", for: indexPath) as! JJTableViewCell
+//        cell.titleL.text = "cell----" + indexPath.row.description
+//        return cell
+        
+        
+        let cell = nibBundle?.loadNibNamed("JJTableViewCell", owner: self, options: nil)?.last as! JJTableViewCell
+        cell.titleL.text = "cell----" + indexPath.row.description
+        return cell
     }
-    */
 
 }

@@ -8,18 +8,29 @@
 
 import UIKit
 
-class Code_tableViewController: UIViewController {
-
+class Code_tableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "label" + indexPath.row.description
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView = UITableView(frame: self.view.frame, style: .plain)
+        tableView?.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        tableView?.dataSource = self
+        self.view.addSubview(tableView!)
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    var tableView:UITableView?
+    
     
 
     /*
